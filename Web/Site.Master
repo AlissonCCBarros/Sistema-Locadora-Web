@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/style.css">
+	<script>document.documentElement.classList.add("js");</script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="header">
+			<div class="container">
+				<a href="Default.aspx"><h2 class="grid-4" style=" color: #ffffff; font-family: fantasy; font-size: 30px;  padding-top: 9px">
+					VideoMania
+				</h2></a>
+				<nav class="grid-12 header_menu">
+					<ul>
+						<li><a href="Filmes.aspx">Filmes</a></li>
+						<li><a href="Atores.aspx">Atores</a></li>
+						<li><a href="Generos.aspx">Gêneros</a></li>
+						<li><a href="Contato.aspx">Contato</a></li>
+						<li><a href="Mensagens.aspx">Mensagens</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+           <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        </form>
+
+		
+		
+
+		<footer>
+			<div class="footer">
+				<div class="container">
+
+					<div class="grid-8 footer_historia">
+						<h3>Nossa História</h3>
+						<p>A Videolândia existe há mais de 10 anos. Atualmente, estamos mudando nosso serviço para aluguel de filmes digitais.</p>
+					</div>
+
+					<div class="grid-4 footer_contato">
+						<h3>Contato</h3>
+						<ul>
+							<li>- 15 3658-4012</li>
+							<li>- contato@videolandia.com</li>
+							<li>- Sorocaba - SP</li>
+						</ul>
+					</div>
+
+					<div class="grid-4 footer_redes">
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="copy">
+				<div class="container">
+					<p class="grid-16"></p>
+				</div>
+			</div>
+		</footer>
+
+	<!-- JavaScript -->
+	<script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+	<!-- JavaScript -->
+    
+</body>
+</html>
+
